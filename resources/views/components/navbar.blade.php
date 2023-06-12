@@ -9,14 +9,14 @@
           >
             <li ><a href="/">Home</a></li>
             <li >
-              <a href="{{ route('batiments') }}">Batiment</a>
+              <a href="{{ route('batiments') }}">Appartements</a>
 
             </li>
             <li><a href="{{ route('services') }}">Services</a></li>
             <li><a href="{{ route('about') }}">About</a></li>
-            <li><a href="{{ route('contact') }}">Contact Us</a></li>
+
             @auth
-            <li><a href="{{ route('admin') }}"> Dashboard </a></li>
+            <li><a href="{{ route('admin') }}"> Dashboard ({{ auth()->user()->name  }}) </a></li>
 
             @endauth
           </ul>

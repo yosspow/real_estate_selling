@@ -7,6 +7,7 @@ use App\Models\Batiment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class batimentController extends Controller
 {
@@ -22,7 +23,8 @@ class batimentController extends Controller
         ->join('images', 'batiments.id', '=', 'images.batiment_id') // joining the contacts table , where user_id and contact_user_id are same
         ->select('batiments.*', 'images.path')
         ->groupBy('batiments.id')
-        ->get();
+        ->paginate(10)
+        ;
         return view('admin.batiment.list',['batiments'=>$data]);
     }
 
@@ -74,7 +76,7 @@ class batimentController extends Controller
     'metrage'=>$request->input('metrage'),
     'status'=>$request->input('status'),
     'ville'=>$request->input('ville'),
-    'lieu'=>$request->input('lieu'),
+    'lieu'=> Str::lower($request->input('lieu')) ,
     'description'=>$request->input('description'),
 
     ]);
@@ -152,7 +154,7 @@ return back()->withErrors([
                 'prix' => $request->input('prix'),
                 'metrage'=>$request->input('metrage'),
                 'status'=>$request->input('status'),
-                'lieu'=>$request->input('lieu'),
+                'lieu'=>Str::lower($request->input('lieu')) ,
                 'description'=>$request->input('description'),
 
                 ]);

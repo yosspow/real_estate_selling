@@ -38,14 +38,14 @@
               <ol class="breadcrumb text-center justify-content-center">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item">
-                  <a href="{{ route('batiments') }}">Batiment</a>
+                  <a href="{{ route('batiments') }}">Appartements</a>
                 </li>
                 <li
                   class="breadcrumb-item active text-white-50"
                   aria-current="page"
                 >
                 @foreach ($batiment['lieu']  as $lieu )
-                {{ $lieu}},
+                {{Str::lower($lieu) }},
                 @endforeach
 
                 </li>
@@ -62,18 +62,22 @@
 
 
         <div class="row">
-        <a href="{{ route('batiment.list') }}" role="button" class="btn btn-dark mb-3 w-25">Dashboard </a>
+            <div class="col-lg-7 col-sm-12">
+
+
+        <a href="{{ route('batiment.list') }}" role="button" class="btn btn-dark mb-3 "><i class="bi bi-person-check-fill  mr-4"></i> <span class="ml-3"> Dashboard </span>  </a>
         </div>
+    </div>
         @endauth
         <div class="row justify-content-between">
 
-          <div class="col-lg-7">
+          <div class="col-lg-6">
 
 
 
 
 
-                <div class="card mb-3 bg-image hover-zoom">
+                <div class="card mb-3 bg-image ">
 
                     <img  src="{{ asset('storage'.'/'.$batiment['images'][0]['path'])  }}"alt="Card image cap" id="product-detail" class="w-100">
                 </div>
@@ -92,7 +96,7 @@
                                 <div class="row">
 
                                     @foreach ($batiment['images'] as $image )
-                                                  <div class="col-4">
+                                                  <div class="col-3">
                                         <a href="#">
                                             <img class="card-img img-fluid" src="{{ asset('storage'.'/'.$image['path'])  }}"  >
                                         </a>
@@ -116,19 +120,19 @@
 
 
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-5">
 
 
 
 
 
-            <h3 class="city d-block mt-5 mb-5 {{ $batiment['status'] == 'disponible' ? 'text-success' : 'text-danger' }} w-50 align-self-center ">{{ Str::upper($batiment['status'] )  }}</h3>
+            <h3 class="city d-block mt-5 mb-5 {{ $batiment['status'] == 'disponible' ? 'text-success' : 'text-danger' }} w-50 align-self-center ">{{ Str::ucfirst($batiment['status'] )  }}</h3>
 
 
 
-            <h2 class="heading text-primary mb-3 ">  {{ $batiment['prix'] }}  MAD  </h2>
+            <h4 class="heading text-primary mb-3 ">  {{ $batiment['prix'] }}  MAD  </h4>
 
-            <h4 class="heading text-success mt-3">  {{ $batiment['metrage'] }}  m³  </h2>
+            <h5 class="heading text-success mt-3">  {{ $batiment['metrage'] }}  m³  </h5>
 
             <p class="meta">
                   @foreach ($batiment['lieu']  as $lieu )

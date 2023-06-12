@@ -25,7 +25,10 @@ class loginController extends Controller
 
     ];
 
-    if (auth()->attempt($data)) {
+    $remember_me = $request->has('remember')?true:false;
+
+
+    if (auth()->attempt($data, $remember_me)) {
         $request->session()->regenerate();
         return to_route('admin');
     }

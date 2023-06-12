@@ -69,7 +69,7 @@ y >
               <span class="flaticon-house-2 mb-4 d-block-3"></span>
               <h3 class="text-black mb-3 font-weight-bold">
                 Vente de biens immobiliers : </h3>
-              <p class="text-black-50">
+              <p class="text-black-50" style="text-align: left;">
                 Elle propose à la vente des appartements, des maisons et des villas, qu'ils soient neufs ou anciens.
               </p>
 
@@ -82,7 +82,7 @@ y >
               <h3 class="text-black mb-3 font-weight-bold">
                 Construction de biens immobiliers :
               </h3>
-              <p class="text-black-50">
+              <p class="text-black-50" style="text-align: left;">
                 La société peut également prendre en charge la construction de biens immobiliers selon les spécifications et les besoins des clients.
               </p>
 
@@ -107,7 +107,7 @@ y >
               <h3 class="text-black mb-3 font-weight-bold">
                 Aménagement et décoration intérieure :
               </h3>
-              <p class="text-black-50">
+              <p class="text-black-50" style="text-align: left;">
                 Certaines sociétés de promotion immobilière proposent également des services d'aménagement intérieur et de décoration pour personnaliser les logements selon les goûts des clients.
               </p>
 
@@ -131,7 +131,7 @@ y >
 
               Service après-vente :
               </h3>
-              <p class="text-black-50">
+              <p class="text-black-50" style="text-align: left;">
                 Une fois l'achat réalisé, la société peut fournir un service après-vente en aidant les clients à résoudre d'éventuels problèmes ou en leur proposant des services de maintenance.
               </p>
 
@@ -141,7 +141,7 @@ y >
             <div class="box-feature mb-4"  style="min-height: 430px;max-height: 430px">
               <span class="flaticon-house-1 mb-4 d-block-1"></span>
               <h3 class="text-black mb-3 font-weight-bold">Gestion de projet :</h3>
-              <p class="text-black-50">
+              <p class="text-black-50" style="text-align: left;">
                 Elle assure la gestion complète des projets immobiliers, y compris la coordination des différentes parties prenantes (architectes, ingénieurs, entrepreneurs, etc.) et le respect des délais et des normes de qualité.
               </p>
 

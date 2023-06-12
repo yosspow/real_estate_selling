@@ -4,7 +4,8 @@
 
 <div class="row">
 
-                        <h2 class="title m-4 h-auto w-100 ">Nouvelle Batiment</h2>
+                        <h2 class="title m-4 h-auto w-100 ">Edit Appartements (<a class="h3" href="{{ route('batiment-single',$batiment['id'])  }}"><i class="bi bi-eye"></i></a>)  </h2>
+
                         <div class="col-12 grid-margin stretch-card">
                             <div class="card">
                               <div class="card-body">

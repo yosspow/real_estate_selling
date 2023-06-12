@@ -56,7 +56,7 @@ height: 100%;
                   <input type="email" value="{{ old('email') }}" name ="email" class="form-control form-control-lg"
                     placeholder="Enter a valid email address" />
 
-             
+
                 </div>
 
 
@@ -70,8 +70,9 @@ height: 100%;
                 <div class="d-flex justify-content-between align-items-center">
                   <!-- Checkbox -->
                   <div class="form-check mb-0">
-                    <input class="form-check-input me-2" type="checkbox" name="" id="form2Example3" />
-                    <label class="form-check-label" for="form2Example3">
+                    <input class="form-check-input me-2" name="remember" type="checkbox"  />
+      
+                    <label class="form-check-label">
                       Remember me
                     </label>
                   </div>

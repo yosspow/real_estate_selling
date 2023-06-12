@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>KP-Bâtiment / Admin </title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="/vendors/feather/feather.css">
   <link rel="stylesheet" href="/vendors/ti-icons/css/themify-icons.css">
@@ -21,15 +21,15 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="/css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="/images/favicon.png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
 </head>
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="{{ route('admin') }}"><img src="/images/logo.svg" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="/images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo ml-5 mb-2" href="{{ route('admin') }}"><img src="/images/logo.png" class="mr-2" alt="logo" style="width:190px;height:90px"/></a>
+        <a class="navbar-brand brand-logo-mini" href="{{ route('admin') }}"><img src="/images/logo-mini.png" style="width:63px;height:55px" alt="logo"/></a>
 
 
       </div>
@@ -42,7 +42,7 @@
 
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="/images/faces/profile.jpg" alt="profile"/>
+              <img src="/images/faces/profile.png" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
 
@@ -105,43 +105,33 @@
         <ul class="nav">
             <li class="nav-item text-danger">
                 <a class="nav-link" href="/">
-                    <i class="bi bi-back"></i>
+                    <i class="bi bi-eye"></i>
                   <span class="menu-title ml-3">KP-Bâtiment</span>
                 </a>
               </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin') }}">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">Nos Batiment</span>
-              <i class="menu-arrow"></i>
+              <span class="menu-title">Appartements</span>
+              <i class="menu-arrow ml-3"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{ route('batiment.list') }}">Batiment list</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{ route('batiment.create') }}"> Nouvelle Batiment </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('batiment.list') }}">Appartements </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('batiment.create') }}"> créer Appartements </a></li>
 
               </ul>
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-              <i class="icon-grid-2 menu-icon"></i>
-              <span class="menu-title">Tables</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
-              </ul>
-            </div>
-          </li>
 
         </ul>
       </nav>

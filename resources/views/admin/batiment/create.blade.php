@@ -4,7 +4,7 @@
 
 <div class="row">
 
-                        <h2 class="title m-4 h-auto w-100 ">Nouvelle Batiment</h2>
+                        <h2 class="title m-4 h-auto w-100 ">Nouvelle Appartements</h2>
                         <div class="col-12 grid-margin stretch-card">
                             <div class="card">
                               <div class="card-body">

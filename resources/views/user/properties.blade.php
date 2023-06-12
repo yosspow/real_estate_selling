@@ -8,6 +8,7 @@
 <html lang="en">
     <x-head/>
   <body>
+
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close">
@@ -26,7 +27,7 @@
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center mt-5">
-            <h1 class="heading" data-aos="fade-up">Batiment</h1>
+            <h1 class="heading" data-aos="fade-up">Appartements</h1>
 
             <nav
               aria-label="breadcrumb"
@@ -39,7 +40,7 @@
                   class="breadcrumb-item active text-white-50"
                   aria-current="page"
                 >
-                Batiment
+                Appartements
                 </li>
               </ol>
             </nav>
@@ -55,7 +56,7 @@
         <div class="row mb-5 align-items-center">
             <div class="col-lg-6 text-center mx-auto">
               <h2 class="font-weight-bold text-primary heading">
-                 Batiment
+                Appartements
               </h2>
             </div>
           </div>
@@ -63,20 +64,18 @@
             @foreach ( $data as $batiment )
 
 
-          <div class=" H col-xs-12 col-sm-12 col-md-12 col-lg-4">
+          <div class=" H col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="property-item mb-30 mt-5 justify-content-around">
               <a href="{{ route('batiment-single',$batiment->id) }}" class="img">
-                <img src="{{ asset('storage').'/'.$batiment->path }}" alt="Image" class="img-fluid" style="max-height: 400px ; min-height: 400px ;min-width: 410px ;max-width: 410px ;"/>
+                <img src="{{ asset('storage').'/'.$batiment->path }}" alt="Image" class="img-fluid  w-100" style="max-height: 300px ; min-height: 300px "/>
               </a>
 
-              <div class="property-content"style="min-width: 410px ">
+              <div class="property-content">
                 <div class="price mb-2"><span>MAD {{ $batiment->prix }}</span></div>
                 <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >{{Str::ucfirst( $batiment->ville) }}</span
-                  >
-                  <span class="city d-block mb-3 {{ $batiment->status == 'disponible' ? 'text-success' : 'text-danger' }} w-50 align-self-center">{{ Str::upper($batiment->status )  }}</span>
 
+                  <span class="city d-block mb-3 {{ $batiment->status == 'disponible' ? 'text-success' : 'text-danger' }} w-50 align-self-center">{{ Str::ucfirst($batiment->status )  }}</span>
+             <div class="h6">{{ Str::limit($batiment->description,50, ' ...') }}</div>
                   <div class="specs d-flex mb-4">
                     <p class="heading  mt-3">  <span class="text-dark">{{ $batiment->metrage }}    </span>m³</p>
                   </div>
@@ -94,11 +93,11 @@
           @endforeach
         </div>
 
-      </div>
-      <div class="d-flex justify-content-center">
-        {!! $data->links() !!}
+      </div class="mt-3">
+      {!! $data->links() !!}
     </div>
-    </div>
+
+
 
     <x-footer/>
   </body>

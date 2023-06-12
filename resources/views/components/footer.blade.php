@@ -4,12 +4,11 @@
         <div class="col-lg-4">
           <div class="widget">
             <h3>Contact</h3>
-            <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+            <address>Ain Sebaa Centre Lot Al Hadika Rte De Rabat 1 Etg Bureau N°30 Ain Sebaa - Aîn-Sebaâ (AR)</address>
             <ul class="list-unstyled links">
-              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-              <li>
-                <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+              <li><a href="tel://11234567890">05-22-35-49-25</a></li>
+             <li>
+                <a href="mailto:batimentkp@gmail.com">batimentkp@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -21,7 +20,7 @@
             <h3>Sources</h3>
             <ul class="list-unstyled float-start links">
               <li><a href="{{ route('about') }}">About us</a></li>
-              <li><a href="{{ route('batiments') }}">Batiments</a></li>
+              <li><a href="{{ route('batiments') }}">Appartements</a></li>
               <li><a href="{{ route('services') }}">Services</a></li>
               <li><a href="/">Home</a></li>
 
@@ -33,31 +32,22 @@
         <!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <div class="widget">
-            <h3>Links</h3>
-            <ul class="list-unstyled links">
+            <h3>Liens</h3>
 
-              <li><a href="{{ route('contact') }}">Contact us</a></li>
-            </ul>
 
             <ul class="list-unstyled social">
               <li>
                 <a href="#"><span class="icon-instagram"></span></a>
               </li>
-              <li>
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
+
               <li>
                 <a href="#"><span class="icon-facebook"></span></a>
               </li>
               <li>
                 <a href="#"><span class="icon-linkedin"></span></a>
               </li>
-              <li>
-                <a href="#"><span class="icon-pinterest"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-dribbble"></span></a>
-              </li>
+
+
             </ul>
           </div>
           <!-- /.widget -->

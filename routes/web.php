@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $bests = DB::table('batiments')
-    ->join('images', 'batiments.id', '=', 'images.batiment_id') // joining the contacts table , where user_id and contact_user_id are same
+    ->join('images', 'batiments.id', '=', 'images.batiment_id')
     ->select('batiments.*', 'images.path')
     ->where('batiments.best',1)
     ->groupBy('batiments.id')
@@ -30,13 +30,13 @@ Route::get('/', function () {
 
 });
 
-Route::get('/batiment/{batiment}', [PagesController::class,'single'])->name('batiment-single');
+Route::get('/appartement/{batiment}', [PagesController::class,'single'])->name('batiment-single');
 
 Route::get('/services', [PagesController::class,'services'])->name('services');
 
 Route::get('/about', [PagesController::class,'about'])->name('about');
 
-Route::get('/properties', [PagesController::class,'properties'])->name('batiments');
+Route::get('/appartements', [PagesController::class,'properties'])->name('batiments');
 
 Route::get('/contact-us', [PagesController::class,'contact'])->name('contact');
 
@@ -50,41 +50,27 @@ Route::middleware('auth')->group(function () {
     Route::prefix('admin')->group( function(){
         Route::get('/dashboard', [PagesController::class,'admin'])->name('admin');
 
-
-
         Route::get('/log-out', [loginController::class,'logout'])->name('logout');
 
-    });
+        Route::prefix('appartements')->group( function(){
 
 
-    Route::prefix('admin/batiment')->group( function(){
+             Route::get('/', [batimentController::class,'list'])->name('batiment.list');
 
 
-        Route::get('/list', [batimentController::class,'list'])->name('batiment.list');
+            Route::get('/créer', [batimentController::class,'create'])->name('batiment.create');
 
+            Route::post('/storing', [batimentController::class,'store'])->name('batiment.store');
 
-        Route::get('/nouvelle-batiment', [batimentController::class,'create'])->name('batiment.create');
+            Route::get('/edit/{batiment}', [batimentController::class,'edit'])->name('batiment.edit');
 
-        Route::post('/storing', [batimentController::class,'store'])->name('batiment.store');
+            Route::post('/updating/{batiment}', [batimentController::class,'update'])->name('batiment.update');
 
-        Route::get('/edit-batiment/{batiment}', [batimentController::class,'edit'])->name('batiment.edit');
+            Route::get('/destroy-appartement/{batiment}', [batimentController::class,'destroy'])->name('batiment.destroy');
 
-        Route::post('/updating/{batiment}', [batimentController::class,'update'])->name('batiment.update');
-
-
-        Route::get('/destroy-batiment/{batiment}', [batimentController::class,'destroy'])->name('batiment.destroy');
-        Route::get('/save-batiment/{batiment}', [batimentController::class,'add_to_best'])->name('batiment.save');
-
-
-
-
-           });
-
-
-
-
-
-
+            Route::get('/save-appartement/{batiment}', [batimentController::class,'add_to_best'])->name('batiment.save');
+});
+ });
 
 });
 

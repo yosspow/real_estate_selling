@@ -96,119 +96,67 @@
     <div class="section pt-0">
       <div class="container">
         <div class="row justify-content-between mb-5">
-          <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="col-lg-4 mb-5 mb-lg-3">
             <div class="img-about dots">
-              <img src="images/hero_bg_2.jpg" alt="Image" class="img-fluid" />
+              <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-home2"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Quality properties</h3>
-                <p class="text-black-50">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-person"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Top rated agents</h3>
-                <p class="text-black-50">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-security"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Easy and safe</h3>
-                <p class="text-black-50">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
-                </p>
-              </div>
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="img-about dots">
+              <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
             </div>
           </div>
+
+
+
         </div>
       </div>
     </div>
+
     <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-          </div>
-          <div class="col-md-4 mt-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-          </div>
-        </div>
-        <div class="row section-counter mt-5">
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">2917</span></span
-              >
-              <span class="caption text-black-50"># of Buy Properties</span>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-12 mb-5 mb-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="contact-info ">
+                <div class="address mt-2  ">
+                  <i class="icon-room"></i>
+                  <h4 class="mb-2 ">localisation :</h4>
+                  <p>
+                    Ain Sebaa Centre Lot Al Hadika Rte De Rabat 1 Etg <br />
+                    Bureau N°30 Ain Sebaa - Aîn-Sebaâ (AR)
+                  </p>
+                </div>
+
+                <div class="open-hours mt-4 ">
+                  <i class="icon-clock-o"></i>
+                  <h4 class="mb-2">Heures d'ouverture::</h4>
+                  <p>
+                    Lundi-Samedi :<br />
+                    9:00 AM - 18:00 PM
+                  </p>
+                </div>
+
+                <div class="email mt-4">
+                  <i class="icon-envelope"></i>
+                  <h4 class="mb-2">Addresse Email:</h4>
+                  <p>batimentkp@gmail.com</p>
+                </div>
+
+                <div class="phone mt-4">
+                  <i class="icon-phone"></i>
+                  <h4 class="mb-2">Appel :</h4>
+                  <p>05-22-35-49-25</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">3918</span></span
-              >
-              <span class="caption text-black-50"># of Sell Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">38928</span></span
-              >
-              <span class="caption text-black-50"># of All Properties</span>
-            </div>
-          </div>
-          <div
-            class="col-6 col-sm-6 col-md-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"
-                ><span class="countup text-primary">1291</span></span
-              >
-              <span class="caption text-black-50"># of Agents</span>
-            </div>
+
           </div>
         </div>
       </div>
-    </div>
 
 
 
