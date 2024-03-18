@@ -49,6 +49,7 @@ Route::get('/contact-us', [PagesController::class,'contact'])->name('contact');
 Route::middleware('auth')->group(function () {
     Route::prefix('admin')->group( function(){
         Route::get('/dashboard', [PagesController::class,'admin'])->name('admin');
+    
 
         Route::get('/log-out', [loginController::class,'logout'])->name('logout');
 
@@ -79,6 +80,10 @@ Route::middleware('guest')->group(function () {
 Route::get('/login',function(){
     return view('login') ;
 })->name('login');
+
+
+
+
 
 });
 Route::post('/check', [loginController::class,'login'])->name('check');
